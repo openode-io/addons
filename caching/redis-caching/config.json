@@ -7,6 +7,6 @@
   "documentation_filename": "README.md",
   "image": "redis:alpine",
   "target_port": 6379,
-  "env_variables": [],
+  "env_variables": {},
   "required_env_variables": []
 }
