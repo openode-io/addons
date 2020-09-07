@@ -1,0 +1,13 @@
+{
+  "name": "memcached",
+  "category": "caching",
+  "minimum_memory_mb": 50,
+  "protocol": "TCP",
+  "logo_filename": "logo.svg",
+  "documentation_filename": "README.md",
+  "image": "memcached:alpine",
+  "target_port": 11211,
+  "required_fields": ["exposed_port"],
+  "env_variables": {},
+  "required_env_variables": []
+}
