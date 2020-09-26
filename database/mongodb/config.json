@@ -1,0 +1,23 @@
+{
+  "name": "mongodb",
+  "category": "database",
+  "minimum_memory_mb": 100,
+  "protocol": "TCP",
+  "logo_filename": "logo.svg",
+  "documentation_filename": "README.md",
+  "image": "mongo",
+  "requires_persistence": true,
+  "persistent_path": "/data/db",
+  "target_port": 27017,
+  "required_fields": ["exposed_port", "persistent_path"],
+  "env_variables": {
+    "MONGO_INITDB_ROOT_USERNAME": "root",
+    "MONGO_INITDB_ROOT_PASSWORD": "123456",
+    "MONGO_INITDB_DATABASE": "mydb"
+  },
+  "required_env_variables": [
+    "MONGO_INITDB_ROOT_USERNAME",
+    "MONGO_INITDB_ROOT_PASSWORD",
+    "MONGO_INITDB_DATABASE"
+  ]
+}
