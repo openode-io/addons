@@ -2,6 +2,13 @@
 
 Official addons on [opeNode.io](https://www.openode.io/).
 
+# config.json schema
+
+| Variable        | Description |
+| ------------- |:-------------:|
+| col 3 is      | right-aligned |
+| col 2 is      | centered      |
+| zebra stripes | are neat      |
 
 # Contributing
 
