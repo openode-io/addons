@@ -6,9 +6,9 @@ Official addons on [opeNode.io](https://www.openode.io/).
 
 | Variable        | Description |
 | ------------- |:-------------:|
-| col 3 is      | right-aligned |
-| col 2 is      | centered      |
-| zebra stripes | are neat      |
+|  name     | Addon name. Must be unique. |
+|  category     | Category (folder) of the addon |
+| minimum\_memory\_mb | Minimum memory required (MB) |
 
 # Contributing
 
