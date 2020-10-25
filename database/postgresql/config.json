@@ -7,14 +7,14 @@
   "documentation_filename": "README.md",
   "image": "postgres:alpine",
   "requires_persistence": true,
-  "persistent_path": "/data/db",
+  "persistent_path": "/var/lib/postgresql/data",
   "target_port": 5432,
   "required_fields": ["exposed_port", "persistent_path"],
   "env_variables": {
     "POSTGRES_PASSWORD": "my-secret-password",
     "POSTGRES_USER": "postgres",
     "POSTGRES_DB": "mydb",
-    "PGDATA": "/data/db"
+    "PGDATA": "/var/lib/postgresql/data"
   },
   "required_env_variables": [
     "POSTGRES_PASSWORD",
