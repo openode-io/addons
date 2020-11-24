@@ -1,0 +1,23 @@
+{
+    "name": "mysql",
+    "category": "database",
+    "minimum_memory_mb": 100,
+    "protocol": "TCP",
+    "logo_filename": "logo.svg",
+    "documentation_filename": "README.md",
+    "image": "mysql",
+    "requires_persistence": true,
+    "persistent_path": "/var/lib/mysql",
+    "target_port": 3306,
+    "required_fields": ["exposed_port", "persistent_path"],
+    "env_variables": {
+        "MYSQL_ROOT_PASSWORD": "my-secret-pw",
+        "MYSQL_USER": "root",
+        "MYSQL_DATABASE": "mydb"
+    },
+    "required_env_variables": [
+        "MYSQL_ROOT_PASSWORD",
+        "MYSQL_USER",
+        "MYSQL_DATABASE"
+    ]
+}
