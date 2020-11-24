@@ -1,7 +1,7 @@
 {
     "name": "mysql",
     "category": "database",
-    "minimum_memory_mb": 100,
+    "minimum_memory_mb": 500,
     "protocol": "TCP",
     "logo_filename": "logo.svg",
     "documentation_filename": "README.md",
