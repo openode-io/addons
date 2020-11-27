@@ -2,7 +2,8 @@
 
 Official addons on [opeNode.io](https://www.openode.io/).
 
-An addon must be placed in folder (category): category/addon-name. In the folder, a config.json must be provided, see below.
+An addon must be placed in folder (category): category/addon-name. *category* must only contains alphanumeric characters and dashes (-). If the category is not currently created, please propose one in the merge request.
+In the folder, a config.json must be provided, see below.
 Addons are available on opeNode.io.
 
 # config.json schema
