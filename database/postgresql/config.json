@@ -5,7 +5,7 @@
   "protocol": "TCP",
   "logo_filename": "logo.svg",
   "documentation_filename": "README.md",
-  "image": "postgres:alpine",
+  "image": "postgres",
   "requires_persistence": true,
   "persistent_path": "/var/lib/postgresql/data",
   "target_port": 5432,
