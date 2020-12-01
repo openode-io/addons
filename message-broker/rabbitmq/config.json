@@ -5,7 +5,7 @@
 	"protocol": "TCP",
 	"logo_filename": "logo.svg",
 	"documentation_filename": "README.md",
-	"image": "rabbitmq:alpine",
+	"image": "rabbitmq",
 	"requires_persistence": true,
 	"persistent_path": "/var/lib/rabbitmq",
 	"target_port": 5672,
