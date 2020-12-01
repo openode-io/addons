@@ -5,7 +5,7 @@
   "protocol": "TCP",
   "logo_filename": "logo.svg",
   "documentation_filename": "README.md",
-  "image": "redis:alpine",
+  "image": "redis",
   "target_port": 6379,
   "required_fields": ["exposed_port"],
   "env_variables": {},
