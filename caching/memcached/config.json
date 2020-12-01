@@ -5,7 +5,7 @@
   "protocol": "TCP",
   "logo_filename": "logo.svg",
   "documentation_filename": "README.md",
-  "image": "memcached:alpine",
+  "image": "memcached",
   "target_port": 11211,
   "required_fields": ["exposed_port"],
   "env_variables": {},
