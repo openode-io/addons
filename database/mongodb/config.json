@@ -7,7 +7,7 @@
   "image": "mongo",
   "requires_persistence": true,
   "persistent_path": "/data/db",
-  "required_fields": ["ports", "persistent_path"],
+  "required_fields": ["persistent_path"],
   "ports": [
     {
       "target_port": 27017,
