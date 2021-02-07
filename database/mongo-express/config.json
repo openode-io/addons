@@ -19,6 +19,8 @@
     "ME_CONFIG_MONGODB_ENABLE_ADMIN": "true"
   },
   "required_env_variables": [
-    "ME_CONFIG_MONGODB_URL"
+    "ME_CONFIG_MONGODB_URL",
+    "ME_CONFIG_MONGODB_SERVER",
+    "ME_CONFIG_MONGODB_ENABLE_ADMIN"
   ]
 }
