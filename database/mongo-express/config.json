@@ -14,12 +14,16 @@
     }
   ],
   "env_variables": {
-    "ME_CONFIG_MONGODB_URL": "mongodb://root:123456@mongodb:27017/mydb?ssl=false",
+    "ME_CONFIG_MONGODB_AUTH_DATABASE": "mydb",
+    "ME_CONFIG_MONGODB_AUTH_USERNAME": "root",
+    "ME_CONFIG_MONGODB_AUTH_PASSWORD": "123456",
     "ME_CONFIG_MONGODB_SERVER": "mongodb",
     "ME_CONFIG_MONGODB_ENABLE_ADMIN": "true"
   },
   "required_env_variables": [
-    "ME_CONFIG_MONGODB_URL",
+    "ME_CONFIG_MONGODB_AUTH_DATABASE",
+    "ME_CONFIG_MONGODB_AUTH_USERNAME",
+    "ME_CONFIG_MONGODB_AUTH_PASSWORD",
     "ME_CONFIG_MONGODB_SERVER",
     "ME_CONFIG_MONGODB_ENABLE_ADMIN"
   ]
