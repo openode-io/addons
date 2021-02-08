@@ -2,14 +2,18 @@
 	"name": "rabbitmq",
 	"category": "message-broker",
 	"minimum_memory_mb": 200,
-	"protocol": "TCP",
 	"logo_filename": "logo.svg",
 	"documentation_filename": "README.md",
 	"image": "rabbitmq",
 	"requires_persistence": true,
 	"persistent_path": "/var/lib/rabbitmq",
-	"target_port": 5672,
-	"required_fields": ["exposed_port", "persistent_path"],
+	"ports": [
+	  {
+	    "target_port": 5672,
+	    "protocol": "TCP"
+	  }
+	],
+	"required_fields": ["persistent_path"],
 	"env_variables": {
 		"RABBITMQ_ERLANG_COOKIE": "my-cookie",
 		"RABBITMQ_VM_MEMORY_HIGH_WATERMARK": "100%"
