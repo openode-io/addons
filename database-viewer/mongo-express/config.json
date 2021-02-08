@@ -1,8 +1,7 @@
 {
   "name": "mongo-express",
-  "category": "database",
+  "category": "database-viewer",
   "minimum_memory_mb": 50,
-  //"logo_filename": "logo.svg",
   "documentation_filename": "README.md",
   "image": "mongo-express",
   "requires_persistence": false,
