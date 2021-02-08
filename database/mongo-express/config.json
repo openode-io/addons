@@ -20,7 +20,8 @@
     "ME_CONFIG_MONGODB_AUTH_USERNAME": "root",
     "ME_CONFIG_MONGODB_AUTH_PASSWORD": "123456",
     "ME_CONFIG_MONGODB_SERVER": "mongodb",
-    "ME_CONFIG_MONGODB_ENABLE_ADMIN": "true"
+    "ME_CONFIG_MONGODB_ENABLE_ADMIN": "true",
+    "ME_CONFIG_SITE_BASEURL": "/mongodb/"
   },
   "required_env_variables": [
     "ME_CONFIG_MONGODB_SERVER",
