@@ -2,7 +2,7 @@
   "name": "mongo-express",
   "category": "database",
   "minimum_memory_mb": 50,
-  "logo_filename": "logo.svg",
+  //"logo_filename": "logo.svg",
   "documentation_filename": "README.md",
   "image": "mongo-express",
   "requires_persistence": false,
@@ -21,7 +21,9 @@
     "ME_CONFIG_MONGODB_AUTH_PASSWORD": "123456",
     "ME_CONFIG_MONGODB_SERVER": "mongodb",
     "ME_CONFIG_MONGODB_ENABLE_ADMIN": "true",
-    "ME_CONFIG_SITE_BASEURL": "/mongodb/"
+    "ME_CONFIG_SITE_BASEURL": "/mongodb/",
+    "ME_CONFIG_BASICAUTH_USERNAME": "myusername",
+    "ME_CONFIG_BASICAUTH_PASSWORD": "123456"
   },
   "required_env_variables": [
     "ME_CONFIG_MONGODB_SERVER",
