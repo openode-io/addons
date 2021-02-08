@@ -2,14 +2,18 @@
   "name": "postgresql",
   "category": "database",
   "minimum_memory_mb": 100,
-  "protocol": "TCP",
   "logo_filename": "logo.svg",
   "documentation_filename": "README.md",
   "image": "postgres",
   "requires_persistence": true,
   "persistent_path": "/var/lib/postgresql/data",
-  "target_port": 5432,
-  "required_fields": ["exposed_port", "persistent_path"],
+  "ports": [
+    {
+      "target_port": 5432,
+      "protocol": "TCP"
+    }
+  ],
+  "required_fields": ["persistent_path"],
   "env_variables": {
     "POSTGRES_PASSWORD": "my-secret-password",
     "POSTGRES_USER": "postgres",
