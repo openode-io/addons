@@ -2,12 +2,16 @@
   "name": "redis-caching",
   "category": "caching",
   "minimum_memory_mb": 50,
-  "protocol": "TCP",
   "logo_filename": "logo.svg",
   "documentation_filename": "README.md",
   "image": "redis",
-  "target_port": 6379,
-  "required_fields": ["exposed_port"],
+  "ports": [
+    {
+      "target_port": 6379,
+      "protocol": "TCP"
+    }
+  ],
+  "required_fields": [],
   "env_variables": {},
   "required_env_variables": []
 }
