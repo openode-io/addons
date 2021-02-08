@@ -2,12 +2,16 @@
   "name": "memcached",
   "category": "caching",
   "minimum_memory_mb": 50,
-  "protocol": "TCP",
   "logo_filename": "logo.svg",
   "documentation_filename": "README.md",
   "image": "memcached",
-  "target_port": 11211,
-  "required_fields": ["exposed_port"],
+  "ports": [
+    {
+      "target_port": 11211,
+      "protocol": "TCP"
+    }
+  ],
+  "required_fields": [],
   "env_variables": {},
   "required_env_variables": []
 }
