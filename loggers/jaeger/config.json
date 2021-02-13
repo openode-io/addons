@@ -1,0 +1,44 @@
+{
+  "name": "jaeger",
+  "category": "loggers",
+  "minimum_memory_mb": 100,
+  "logo_filename": "logo.svg",
+  "documentation_filename": "README.md",
+  "image": "jaegertracing/all-in-one:1.21",
+  "requires_persistence": true,
+  "persistent_path": "/badger",
+  "ports": [
+    {
+      "target_port": 6831,
+      "protocol": "UDP"
+    },
+    {
+      "target_port": 6832,
+      "protocol": "UDP"
+    },
+    {
+      "target_port": 5778,
+      "protocol": "TCP"
+    },
+    {
+      "target_port": 16686,
+      "protocol": "TCP"
+    },
+    {
+      "target_port": 14268,
+      "protocol": "TCP"
+    },
+    {
+      "target_port": 14250,
+      "protocol": "TCP"
+    }
+  ],
+  "required_fields": ["persistent_path"],
+  "env_variables": {
+    "SPAN_STORAGE_TYPE": "badger",
+    "BADGER_EPHEMERAL": "false",
+    "BADGER_DIRECTORY_VALUE": "/badger/data",
+    "BADGER_DIRECTORY_KEY": "/badger/key"
+  },
+  "required_env_variables": []
+}
