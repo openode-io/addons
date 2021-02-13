@@ -40,7 +40,7 @@
     "BADGER_EPHEMERAL": "false",
     "BADGER_DIRECTORY_VALUE": "/badger/data",
     "BADGER_DIRECTORY_KEY": "/badger/key",
-    "JAEGER_BASE_PATH": "/jaeger-collector",
+    "JAEGER_BASE_PATH": "/jaeger-collector"
   },
   "required_env_variables": [
     "BADGER_DIRECTORY_VALUE",
