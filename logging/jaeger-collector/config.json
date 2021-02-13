@@ -1,7 +1,7 @@
 {
   "name": "jaeger-collector",
   "category": "logging",
-  "minimum_memory_mb": 100,
+  "minimum_memory_mb": 50,
   "logo_filename": "logo.png",
   "documentation_filename": "README.md",
   "image": "jaegertracing/all-in-one",
