@@ -2,7 +2,7 @@
   "name": "jaeger",
   "category": "loggers",
   "minimum_memory_mb": 100,
-  "logo_filename": "logo.svg",
+  "logo_filename": "logo.png",
   "documentation_filename": "README.md",
   "image": "jaegertracing/all-in-one:1.21",
   "requires_persistence": true,
