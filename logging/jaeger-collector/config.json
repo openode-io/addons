@@ -5,6 +5,7 @@
   "logo_filename": "logo.png",
   "documentation_filename": "README.md",
   "image": "jaegertracing/all-in-one",
+  "args": ["--query.base-path", "$(JAEGER_BASE_PATH)"],
   "requires_persistence": true,
   "persistent_path": "/badger",
   "ports": [
@@ -38,7 +39,12 @@
     "SPAN_STORAGE_TYPE": "badger",
     "BADGER_EPHEMERAL": "false",
     "BADGER_DIRECTORY_VALUE": "/badger/data",
-    "BADGER_DIRECTORY_KEY": "/badger/key"
+    "BADGER_DIRECTORY_KEY": "/badger/key",
+    "JAEGER_BASE_PATH": "/jaeger-collector",
   },
-  "required_env_variables": []
+  "required_env_variables": [
+    "BADGER_DIRECTORY_VALUE",
+    "BADGER_DIRECTORY_KEY",
+    "JAEGER_BASE_PATH"
+  ]
 }
