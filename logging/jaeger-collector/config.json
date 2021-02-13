@@ -1,10 +1,10 @@
 {
-  "name": "jaeger",
-  "category": "loggers",
+  "name": "jaeger-collector",
+  "category": "logging",
   "minimum_memory_mb": 100,
   "logo_filename": "logo.png",
   "documentation_filename": "README.md",
-  "image": "jaegertracing/all-in-one:1.21",
+  "image": "jaegertracing/all-in-one",
   "requires_persistence": true,
   "persistent_path": "/badger",
   "ports": [
