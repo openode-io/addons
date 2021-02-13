@@ -1,0 +1,1 @@
+# Jaeger Addon for remote logging
